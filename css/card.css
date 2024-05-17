@@ -1,0 +1,129 @@
+.card.container {
+  border: solid 1px #C4C4C4;
+  padding: 0.5rem;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card.image_grid {
+  height: 12rem;
+  width: 100%; 
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: -2px 2px 3px 0 rgba(0,0,0,0.4);
+}
+
+.card.image_grid img {
+  object-fit: cover;
+  width: 100%;
+  object-position: 0px -35px;
+  cursor: pointer;
+}
+
+.card.item_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.card.item_info-value {
+  font-weight:600;
+}
+
+.card.button {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 400ms;
+  font-weight: 600;
+}
+
+.card.button:hover {
+  filter: brightness(0.9)
+}
+
+.card.button:disabled {
+  color: #353535;
+  background-color: #c4c4c4;
+  cursor: not-allowed
+}
+
+.card.item_info-size {
+  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  border: solid 1px #c4c4c4;
+}
+
+.card.image_expanded {
+  padding: 0.75rem; 
+  display: flex;
+  justify-content: center
+}
+
+.card.image_expanded img {
+  width: 17rem;
+}
+
+.card.order_info {
+  padding: 1rem; 
+  display: flex;
+  flex-direction: column;
+}
+
+.card.order_info button {
+  width: 13rem;
+  margin: 0 auto;
+  background-color:#25d366;
+  height: 2.5rem;
+  border: none;
+  border-radius: 4px;
+  transition: 400ms
+}
+
+.card.order_info button:hover {
+  filter: brightness(0.9)
+}
+
+.card.order_info button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.card.order_info ul {
+  max-width: 19rem;
+  padding: 0.5rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}
+
+.card.order_info ul li {
+  line-height: 16px;
+  margin-top: 0.25rem;
+}
+
+.card.id {
+  position: absolute;
+  top:0;
+  right:0;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--color-primary);
+  border-radius: 0.4px;
+}
